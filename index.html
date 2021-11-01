@@ -8275,42 +8275,36 @@
                 </div>
               </div>
             </section>
-            <section data-background-color="rgb(0, 0, 0)">
-              <div
-                class="sl-block"
-                data-block-type="code"
-                style="
-                  width: 1017.87px;
-                  height: auto;
-                  left: 131.065px;
-                  top: 203px;
-                "
-                data-name="code-27940d"
-              >
-                <div
-                  class="sl-block-content notranslate"
-                  data-highlight-theme="ir-black"
-                  data-code-frame="osx"
-                  style="
-                    z-index: 10;
-                    border-style: solid;
-                    border-width: 1px;
-                    border-color: rgb(0, 255, 0);
-                  "
-                  data-code-wrap="true"
-                  data-code-autoheight="true"
-                >
-                  <pre
-                    style="font-size: 30px; line-height: 36px"
-                    class="xml"
-                  ><code data-line-numbers="1|2|5|">&lt;div className='primary-footer-section location-section'&gt;
-			&lt;h3&gt;Location&lt;/h3&gt;
-			&lt;address&gt;
-				19163 Merriman &lt;br&gt;&lt;/br&gt;Livonia, MI 48152
-			&lt;/address&gt;
-		&lt;/div&gt;</code></pre>
-                </div>
-              </div>
+            <section data-background-color="rgb(0, 0, 0)" data-auto-animate>
+              <pre data-id="code-animation"><code data-trim data-line-numbers>
+								let planets = [
+									{ name: 'mars', diameter: 6779 },
+								]
+							</code></pre>
+            </section>
+            <section data-background-color="rgb(0, 0, 0)" data-auto-animate>
+              <pre data-id="code-animation"><code data-trim data-line-numbers>
+								let planets = [
+									{ name: 'mars', diameter: 6779 },
+									{ name: 'earth', diameter: 12742 },
+									{ name: 'jupiter', diameter: 139820 }
+								]
+							</code></pre>
+            </section>
+            <section data-background-color="rgb(0, 0, 0)" data-auto-animate>
+              <pre data-id="code-animation"><code data-trim data-line-numbers>
+								let circumferenceReducer = ( c, planet ) => {
+									return c + planet.diameter * Math.PI;
+								}
+						
+								let planets = [
+									{ name: 'mars', diameter: 6779 },
+									{ name: 'earth', diameter: 12742 },
+									{ name: 'jupiter', diameter: 139820 }
+								]
+						
+								let c = planets.reduce( circumferenceReducer, 0 )
+							</code></pre>
             </section>
           </section>
           <section
@@ -8436,6 +8430,7 @@
         transition: 'slide',
         backgroundTransition: 'slide',
         center: false,
+        controls: false,
 
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
