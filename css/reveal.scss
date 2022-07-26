@@ -1907,3 +1907,30 @@ $notesWidthPercent: 25%;
 
 @import 'print/pdf.scss';
 @import 'print/paper.scss';
+
+footer {
+  position: absolute;
+  background: #00e67a;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+footer ul.inline {
+  width: 100%;
+  margin: 10px 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+footer ul.inline li {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 17px;
+  color: #000;
+}
+
+footer ul.inline li a {
+  color: black;
+}
